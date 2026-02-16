@@ -12,6 +12,9 @@
 
 <body>
 
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Title and Intro -->
     <header>
         <h1>Fitness</h1>
@@ -19,16 +22,16 @@
     </header>
 
     <!-- Main content -->
-    <main>
+    <main id="main-content">
 
-        <!-- Section explaining why fitness matters -->
-        <section class="content">
-            <h3>Why Fitness Is Important</h3>
+        <!-- Why fitness matters -->
+        <section id="why-fitness">
+            <h2>Why Fitness Is Important</h2>
 
             <p>
-                While fitness is often associated with bodybuilding, there are numerous health benefits 
-                unrealted to building muscle. For example, fitness helps improve physical health, 
-                mental well-being, and overall quality of life.
+                While fitness is often associated with bodybuilding, there are numerous health benefits
+                unrelated to building muscle. Fitness improves physical health, mental well-being,
+                and overall quality of life.
             </p>
 
             <p>
@@ -36,40 +39,50 @@
             </p>
         </section>
 
-        <!-- Section containing an image and description -->
-        <section class="content">
-            <h3>Go get active!</h3>
+        <!-- Activity section -->
+        <section class="activity-section">
+            <h2>Go Get Active!</h2>
 
-            <!-- Arm workout image -->
             <img 
                 src="./images/arm-workout.jpg" 
-                alt="Person engaging in bicep workout"
+                alt="Person performing a bicep workout with dumbbells"
             >
 
             <p>
-                Most think it's hard to engage in fitness, but staying active can include gym workouts, 
+                Many people think fitness is difficult, but staying active can include gym workouts,
                 outdoor exercise, or simple daily movement.
             </p>
         </section>
 
-        <!-- Section containing an unordered list -->
-        <section class="content">
-            <h3>Benefits of Exercise</h3>
+        <!-- Benefits section with flexbox -->
+        <section id="benefits-container">
 
-            <ul>
-                <li>Improves heart health</li>
-                <li>Builds muscle strength & mass</li>
-                <li>Boosts mental health</li>
-            </ul>
+            <div class="benefits-list">
+                <h2>Benefits of Exercise</h2>
+
+                <ul>
+                    <li>Improves heart health</li>
+                    <li>Builds muscle strength and mass</li>
+                    <li>Boosts mental health</li>
+                </ul>
+            </div>
+
+            <div class="benefits-image">
+                <img 
+                    src="./images/arm-workout.jpg" 
+                    alt="Person lifting weights during an arm workout"
+                >
+            </div>
+
         </section>
 
     </main>
 
-    <!-- Footer containing internal navigation link -->
-    <footer>
-        <p>
-            <a href="page2.html">Read more about workout routines</a>
-        </p>
+    <!-- Footer with navigation -->
+    <footer id="page-footer">
+        <ul>
+            <li><a href="page2.html">Workout Routines</a></li>
+        </ul>
     </footer>
 
 </body>

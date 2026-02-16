@@ -12,6 +12,9 @@
 
 <body>
 
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header with page title and description -->
     <header>
         <h1>Workout Routines</h1>
@@ -19,15 +22,15 @@
     </header>
 
     <!-- Main content -->
-    <main>
+    <main id="main-content">
 
-        <!-- Section containing an ordered list -->
-        <section class="content">
-            <h3>Beginner Workout Steps</h3>
+        <!-- Workout steps section -->
+        <section class="activity-section">
+            <h2>Beginner Workout Steps</h2>
 
             <p>
-                Workouts should be tailored to your needs, so doing individual research is necessary.
-                For starters, a workout should look like this.
+                Workouts should be tailored to individual needs. For beginners,
+                a simple workout structure looks like this:
             </p>
 
             <ol>
@@ -37,22 +40,24 @@
                 <li>Stretch</li>
             </ol>
 
-        <img 
-            src="./images/arm-workout.jpg" 
-            alt="Person engaging in bicep workout"
-            width="50%"
-        >
+            <img 
+                src="./images/arm-workout.jpg" 
+                alt="Person performing strength training with dumbbells"
+            >
 
             <p>
+                Following these steps helps reduce injury risk while building strength
+                and endurance over time.
+            </p>
         </section>
 
     </main>
 
-    <!-- Footer with link back to homepage -->
-    <footer>
-        <p>
-            <a href="index.html">Back to Home</a>
-        </p>
+    <!-- Footer with navigation -->
+    <footer id="page-footer">
+        <ul>
+            <li><a href="index.html">Back to Home</a></li>
+        </ul>
     </footer>
 
 </body>

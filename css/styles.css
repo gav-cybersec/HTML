@@ -1,12 +1,12 @@
 /* GLOBAL STYLES */
 
-/* Font & Border */
+/* Font & Box Model */
 * {
     font-family: Helvetica;
     box-sizing: border-box;
 }
 
-/* Page background and base text styles*/
+/* Page background and base text styles */
 body {
     background-color: #A9A9A9;
     margin: 0;
@@ -14,96 +14,54 @@ body {
     color: #000000;
 }
 
-/* HEADER STYLES */
+/* Accessibility */
+.skip-link {
+    position: absolute;
+    left: -999px;
+}
 
+.skip-link:focus {
+    left: 10px;
+    background-color: #ffffff;
+    padding: 8px;
+    z-index: 1000;
+}
+
+/* HEADER STYLES */
 header {
     background-color: #DCDCDC;
-    text-align: center;
     padding: 20px;
     border-radius: 6px;
 }
 
-/* HEADINGS (TAG-BASED SELECTOR) */
+/* SECTION STYLING */
 
-h1 {
-    margin-bottom: 5px;
-}
-
-h3 {
-    font-size: 25px;
-    text-align: center;
-    margin-top: 15px;
-}
-
-/* IMAGES (TAG-BASED SELECTOR) */
-
-img {
-    width: 45%;
-    border-radius: 6px;
-    display: block;
-    margin: 10px auto;
-}
-
-/* SECTION STYLING USING IDs */
-
-/* Fitness section */
-#why-fitness {
-    background-color: #DCDCDC;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 6px;
-}
-
-/* Benefits section container */
-#benefits-container {
-    background-color: #DCDCDC;
-    padding: 15px;
-    border-radius: 6px;
-    margin-bottom: 15px;
-
-    /* FLEXBOX IMPLEMENTATION */
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
-}
-
-/* CLASS-BASED STYLING */
-
-/* Activity / workout sections */
+#why-fitness,
 .activity-section {
     background-color: #DCDCDC;
     padding: 15px;
     border-radius: 6px;
-    margin-bottom: 15px;
 }
 
-/* Benefits content columns */
-.benefits-list,
-.benefits-image {
-    flex: 1; /* Equal space in flex container */
+/* Benefits section background only
+   (handled by bootstrap grid) */
+#benefits-container {
+    background-color: #DCDCDC;
+    padding: 15px;
+    border-radius: 6px;
 }
 
-/* FOOTER FLEXBOX */
+/* IMAGES */
+
+img {
+    border-radius: 6px;
+}
+
+/* FOOTER */
 
 #page-footer {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
-}
-
-/* Flexbox navigation links */
-#page-footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    margin: 10px 0;
-}
-
-/* Footer links */
-#page-footer a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
 }
